@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="CampusConnect brings every campus event together.">
+  <title>CampusConnect — Events that bring us together</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#events">Skip to events</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="CampusConnect home"><span class="brand-mark">C</span><span>Campus<span>Connect</span></span></a>
+    <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav"><span></span><span></span><span></span><span class="sr-only">Toggle menu</span></button>
+    <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+      <a href="#events">Events</a><a href="#why-us">About</a><a href="#contact">Contact</a>
+      <button class="nav-admin" id="adminButton" type="button">Admin area <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Your campus, in motion</p>
+        <h1 id="heroTitle">Find your <em>next</em><br>great moment.</h1>
+        <p class="hero-text">From bright ideas to late-night applause, CampusConnect brings every event worth showing up for into one place.</p>
+        <div class="hero-actions"><a class="button button-light" href="#events">Explore events <span>↓</span></a><button class="text-button" id="heroRegister" type="button">Register now <span>→</span></button></div>
+        <div class="hero-proof"><div class="avatars"><span>AM</span><span>RK</span><span>SK</span><span>+</span></div><p><strong>1,200+ students</strong><br>making campus memorable</p></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="visual-card calendar-card"><span class="card-icon">✦</span><div><strong>NOV</strong><b>14</b></div><p>TechFest</p></div>
+        <div class="visual-card ticket-card"><span>◉</span><p>YOU'RE<br><strong>INVITED</strong></p><i>→</i></div>
+        <div class="visual-card floating-note"><span>✺</span><p>Something<br>for everyone.</p></div>
+        <div class="hero-star star-one">✦</div><div class="hero-star star-two">✦</div><div class="hero-star star-three">✦</div>
+      </div>
+      <div class="hero-bottom"><span>SCROLL TO DISCOVER</span><span class="scroll-line"></span><span>2026 / 27</span></div>
+    </section>
+
+    <section class="events-section" id="events" aria-labelledby="eventsTitle">
+      <div class="section-heading"><div><p class="eyebrow dark"><span></span> What's happening</p><h2 id="eventsTitle">Made for<br><em>showing up.</em></h2></div><p>Find the events that make your campus feel a little more like yours.</p></div>
+      <div class="event-controls">
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="eventSearch" type="search" placeholder="Search events, places, topics…" autocomplete="off"><span class="sr-only">Search events</span></label>
+        <div class="filters" id="categoryFilters" aria-label="Filter events by category"><button class="filter active" data-category="All" type="button">All events</button><button class="filter" data-category="Technology" type="button">Tech</button><button class="filter" data-category="Culture" type="button">Culture</button><button class="filter" data-category="Sports" type="button">Sports</button><button class="filter" data-category="Workshop" type="button">Workshops</button></div>
+      </div>
+      <div class="event-grid" id="eventGrid" aria-live="polite"><div class="loading">Finding great things to do…</div></div>
+      <button class="view-all" id="viewAll" type="button">View all events <span>→</span></button>
+    </section>
+
+    <section class="statement" id="why-us" aria-labelledby="statementTitle"><p class="eyebrow center"><span></span> Why CampusConnect <span></span></p><h2 id="statementTitle">One campus.<br><em>So much to feel.</em></h2><p>Good things happen when the right people are in the room. We make that room easier to find.</p><div class="statement-stats"><div><strong>48</strong><span>events this semester</span></div><div><strong>12</strong><span>student communities</span></div><div><strong>1</strong><span>place for it all</span></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="contact-intro"><p class="eyebrow dark"><span></span> Get in touch</p><h2>Have an idea?<br><em>Let's make it real.</em></h2><p>Planning something for campus or need a hand finding your place? We would love to hear from you.</p><a href="mailto:events@campus.edu">events@campus.edu <span>↗</span></a></div><form class="contact-form card-form" id="contactForm"><h3>Send a note</h3><label>Your name<input name="name" required minlength="2" placeholder="Your name"></label><label>Email address<input name="email" required type="email" placeholder="you@college.edu"></label><label>What’s on your mind?<textarea name="message" required minlength="10" placeholder="Tell us a little about it…"></textarea></label><button class="button button-dark" type="submit">Send message <span>→</span></button><p class="form-feedback" aria-live="polite"></p></form></section>
+  </main>
+
+  <footer><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark">C</span><span>Campus<span>Connect</span></span></a><div class="newsletter"><p>Get good things in your inbox.</p><form id="newsletterForm"><label class="sr-only" for="newsletterEmail">Email address</label><input id="newsletterEmail" name="email" type="email" required placeholder="Email address"><button type="submit" aria-label="Subscribe">→</button></form><p class="form-feedback" aria-live="polite"></p></div></div><div class="footer-bottom"><span>© 2026 CampusConnect</span><span>Built for the campus community</span><a href="#top">Back to top ↑</a></div></footer>
+
+  <dialog class="modal" id="registrationModal"><div class="modal-top"><span class="modal-kicker">EVENT REGISTRATION</span><button class="close-modal" type="button" data-close="registrationModal" aria-label="Close">×</button></div><div id="registrationSuccess" class="success-state" hidden><div>✓</div><h2>You’re on the list.</h2><p id="successText"></p><button class="button button-dark" type="button" data-close="registrationModal">Back to events</button></div><form id="registrationForm"><h2>Save your spot.</h2><p class="modal-event" id="selectedEventName">Choose an event to continue.</p><input id="selectedEventId" name="eventId" type="hidden"><div class="input-row"><label>Full name<input name="name" required minlength="2" placeholder="Your full name"></label><label>Email<input name="email" required type="email" placeholder="you@college.edu"></label></div><div class="input-row"><label>Department<input name="department" required minlength="2" placeholder="e.g. Computer Science"></label><label>Phone<input name="phone" required minlength="7" placeholder="Your phone number"></label></div><button class="button button-dark" type="submit">Confirm registration <span>→</span></button><p class="form-feedback" aria-live="polite"></p></form></dialog>
+
+  <dialog class="modal admin-modal" id="adminModal"><div class="modal-top"><span class="modal-kicker">CAMPUSCONNECT ADMIN</span><button class="close-modal" type="button" data-close="adminModal" aria-label="Close">×</button></div><section id="loginPanel"><h2>Welcome back.</h2><p class="small-copy">Sign in to manage events and registrations.</p><form id="adminLoginForm"><label>Email<input name="email" type="email" required value="admin@campus.edu"></label><label>Password<input name="password" type="password" required value="campus2026"></label><button class="button button-dark" type="submit">Sign in <span>→</span></button><p class="form-feedback" aria-live="polite"></p></form><p class="demo-note">Demo: admin@campus.edu / campus2026</p></section><section id="dashboardPanel" hidden><div class="dashboard-heading"><div><h2>Campus pulse.</h2><p>Live data from your campus file.</p></div><div><button id="exportRegistrations" class="outline-button" type="button">Export CSV ↓</button><button id="logoutButton" class="text-button dark-text" type="button">Log out</button></div></div><div class="dashboard-stats" id="dashboardStats"></div><div class="dashboard-columns"><div><h3>New event</h3><form id="eventForm" class="admin-form"><label>Event title<input name="title" required minlength="3" placeholder="Event name"></label><div class="input-row"><label>Category<input name="category" required placeholder="e.g. Culture"></label><label>Capacity<input name="capacity" type="number" min="1" required placeholder="120"></label></div><div class="input-row"><label>Date<input name="date" type="date" required></label><label>Time<input name="time" type="time" required></label></div><label>Location<input name="location" required placeholder="Venue"></label><label>Description<textarea name="description" required minlength="10" placeholder="A short event description"></textarea></label><button class="button button-dark" type="submit">Create event <span>+</span></button><p class="form-feedback" aria-live="polite"></p></form></div><div><h3>Event roster</h3><div class="admin-list" id="adminEventList"></div></div></div><div class="registrations"><h3>Recent registrations</h3><div class="table-wrap"><table><thead><tr><th>Student</th><th>Event</th><th>Department</th><th>Time</th></tr></thead><tbody id="registrationRows"></tbody></table></div></div></section></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
