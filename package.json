@@ -4,7 +4,7 @@
   "private": true,
   "description": "Campus event management system with a dependency-free Node.js backend.",
   "scripts": {
-    "start": "node server.js"
+    "start": "node local-server.cjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0"

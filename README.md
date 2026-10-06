@@ -5,7 +5,7 @@ A complete, dependency-free Campus Event Management System. The responsive front
 ## Run it locally
 
 1. Open PowerShell in this folder.
-2. Run `node server.js`.
+2. Run `node local-server.cjs`.
 3. Visit `http://localhost:3000` in a browser.
 
 ## Working features
@@ -19,7 +19,7 @@ The demo administrator credentials are:
 
 `admin@campus.edu` / `campus2026`
 
-For a non-demo deployment, set `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and `PORT` environment variables before starting the server.
+For a non-demo local deployment, set `ADMIN_EMAIL`, `ADMIN_PASSWORD`, and `PORT` environment variables before starting the server.
 
 ## Deploy it publicly on Vercel
 
