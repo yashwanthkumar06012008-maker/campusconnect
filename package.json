@@ -2,14 +2,12 @@
   "name": "campusconnect-event-management",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "Campus event management system with a dependency-free Node.js backend.",
   "scripts": {
     "start": "node local-server.cjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.0.0"
-  },
-  "engines": {
-    "node": ">=20"
   }
 }

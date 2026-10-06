@@ -2,9 +2,11 @@
 
 ## What this deployment uses
 
-Vercel hosts the website and serverless API. The application does **not** write registrations to a JSON file on Vercel; serverless functions are not a durable file database. Instead, the included `api/[...path].js` API saves all live data in Neon Postgres.
+Vercel hosts the website and serverless API. The application does **not** write registrations to a JSON file on Vercel; serverless functions are not a durable file database. Instead, the included `api/[...path].js` API saves all live data in Neon Postgres. The local-only server is named `local-server.cjs` so Vercel does not mistake it for a production function.
 
-The project still runs locally with the JSON file when you start `server.js`.
+The project is preconfigured as an **Other** Vercel project; do not change its Framework Preset to Node.js or Express in Vercel settings.
+
+The project still runs locally with the JSON file when you start `local-server.cjs`.
 
 ## 1. Put the project on GitHub
 
@@ -55,6 +57,6 @@ Push changes to GitHub. Vercel creates a new deployment automatically. Your even
 
 ## Security and project limits
 
-- Keep all three administrator environment variables private. Never put them into `app.js`, `server.js`, or GitHub.
+- Keep all three administrator environment variables private. Never put them into `app.js`, `local-server.cjs`, or GitHub.
 - For a real college-wide system, add student authentication, email verification, rate limiting, and a privacy policy before collecting personal data.
 - The Neon integration can be created through Vercel’s Marketplace. Check the selected plan’s current limits before public launch.
