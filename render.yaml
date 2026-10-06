@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: campusconnect
+    runtime: node
+    plan: starter
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+    disk:
+      name: campusconnect-data
+      mountPath: /var/data
+      sizeGB: 1
